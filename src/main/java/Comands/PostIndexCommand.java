@@ -1,5 +1,6 @@
 package Comands;
 
+import Gephi.Gephi;
 import Grafo.Aresta;
 import Grafo.Grafo;
 import Grafo.Vertice;
@@ -21,6 +22,10 @@ public class PostIndexCommand implements Comando {
     public void exec(HttpServletRequest request, HttpServletResponse response) {
         try {
 
+            //Descomentar para rodar
+            //Gephi gephi = new Gephi();
+            //gephi.script();
+            
             Integer quantidadeDeVertices = Integer.parseInt(request.getParameter("qtddVertices"));
 
             Random rand = new Random();
